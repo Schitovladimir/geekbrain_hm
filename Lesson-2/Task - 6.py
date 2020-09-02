@@ -56,10 +56,7 @@ for product in goods:
         if i > 0: #После того, как создали список, добавляем в него значения из других словарей
             dict_prod[key].append(value)
         else: #Если записываем первый раз данные в словарь, то в значении создаем список для каждого ключа
-            value2 = value
-            value = list(value)
-            value.clear()
-            value.append(value2)
+            value = value.split()
             dict_prod.setdefault(key, value)
     i += 1
 print(dict_prod)

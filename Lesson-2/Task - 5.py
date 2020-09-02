@@ -20,23 +20,16 @@ while True:
     if rate.isdigit(): #Условия для проверки на число
         if len(rates) == 0: #Если еще не вводили числа рейтинга, то добавляем первый раз
             rates.append(int(rate))
-        elif len(rates) == 1: #Если уже один раз ввели, то сравниваем второе введенное число с первым
-            if rates[0] >= int(rate):
-                rates.append(int(rate))
-            else:
-                rates.insert(0,int(rate))
         else: #Если вводим третье число, то запускаем проверку по остальным числам
             for i in range(len(rates)):
                 rate = int(rate)
                 if rates[i] >= rate:
                     if rate == rates[i]:
                         if rates.count(i) > 1:
-                            a = rates.index(rate)+count(i)-1
-                            rates.insert(a,rate)
+                            rates.insert((rates.index(rate)+count(i)-1),rate)
                             break
                         else:
-                            a = rates.index(rate)
-                            rates.insert(a, rate)
+                            rates.insert(rates.index(rate), rate)
                             break
                     else:
                         if i == len(rates)-1:
@@ -55,11 +48,6 @@ while True:
         print(f"User entered {rate}. Result is {rates_}")
     else:
         print("You have to enter only numbers...")
-"""    exit = input("If you would to get out press 'q'")
-    if exit == "q":
-        break"""
-
-
 
 
 
