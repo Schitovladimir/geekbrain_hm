@@ -1,0 +1,5 @@
+Python is an interpreted, high-level and general-purpose programming language.
+Python is dynamically typed and garbage-collected.
+Python was created in the late 1980s as a successor to the ABC language.
+Python interpreters are available for many operating systems.
+Python is meant to be an easily readable language.
