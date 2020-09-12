@@ -39,7 +39,7 @@ def join_dict(list_1, list_2):
 
 def json_(dict): # Функция для создания JSON объекта
     with open("test_7.json", "w") as write_f:
-        json.dump(dict, write_f, ensure_ascii=False)
+        json.dump(dict, write_f, ensure_ascii=False, sort_keys=True, indent=4)
     print(json.dumps(dict, ensure_ascii=False))
 
 
