@@ -6,7 +6,7 @@ class Road():
             self.weight = 25
     def calculate(self):
         try:
-            print(f"To cover the entire roadway, you need {round(int(self._lenght) * int(self._width) * self.thickness * self.weight * 0.001)} tons of asphalt")
+            print(f"To cover the entire roadway, you need {self._lenght}m * {self._width}m * {self.thickness}см * {self.weight}kg = {round(int(self._lenght) * int(self._width) * self.thickness * self.weight * 0.001)} tons of asphalt")
         except (ValueError):
             print("Please enter only numbers")
 
